@@ -67,6 +67,12 @@ build CMakeFiles/afd_simulator.dir/controller.c.o: C_COMPILER__afd_simulator_uns
   OBJECT_DIR = CMakeFiles/afd_simulator.dir
   OBJECT_FILE_DIR = CMakeFiles/afd_simulator.dir
 
+build CMakeFiles/afd_simulator.dir/view.c.o: C_COMPILER__afd_simulator_unscanned_Debug /home/nikoly/Documents/projects/afd-simulator/view.c || cmake_object_order_depends_target_afd_simulator
+  DEP_FILE = CMakeFiles/afd_simulator.dir/view.c.o.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/afd_simulator.dir
+  OBJECT_FILE_DIR = CMakeFiles/afd_simulator.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target afd_simulator
@@ -75,7 +81,7 @@ build CMakeFiles/afd_simulator.dir/controller.c.o: C_COMPILER__afd_simulator_uns
 #############################################
 # Link the executable afd_simulator
 
-build afd_simulator: C_EXECUTABLE_LINKER__afd_simulator_Debug CMakeFiles/afd_simulator.dir/main.c.o CMakeFiles/afd_simulator.dir/service.c.o CMakeFiles/afd_simulator.dir/controller.c.o
+build afd_simulator: C_EXECUTABLE_LINKER__afd_simulator_Debug CMakeFiles/afd_simulator.dir/main.c.o CMakeFiles/afd_simulator.dir/service.c.o CMakeFiles/afd_simulator.dir/controller.c.o CMakeFiles/afd_simulator.dir/view.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/afd_simulator.dir
   POST_BUILD = :

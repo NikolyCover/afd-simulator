@@ -1,16 +1,13 @@
 # ninja log v5
 0	19	1705264317766724931	CMakeFiles/afd_simulator.dir/view.c.o	bf033d7a1e8b0cfa
-0	14	1705354867545840498	build.ninja	161df8b7c76ed2f3
-0	20	1705533113509323651	CMakeFiles/afd_simulator.dir/controller.c.o	2a0661f21cfd2e97
-1	22	1705533057967869418	CMakeFiles/afd_simulator.dir/service.c.o	215e4f4c22ef2302
+0	14	1705535006155349612	build.ninja	161df8b7c76ed2f3
+1	21	1705534780620456636	CMakeFiles/afd_simulator.dir/controller.c.o	2a0661f21cfd2e97
+0	21	1705534627975701295	CMakeFiles/afd_simulator.dir/service.c.o	215e4f4c22ef2302
 0	14	1705265640603725650	CMakeFiles/afd_simulator.dir/main.c.o	15e8038055117cd7
-20	35	1705533113521323965	afd_simulator	f165d5c951781963
-0	20	1705533233776473882	CMakeFiles/afd_simulator.dir/controller.c.o	2a0661f21cfd2e97
-20	35	1705533233792474301	afd_simulator	f165d5c951781963
-0	19	1705533252480963960	CMakeFiles/afd_simulator.dir/controller.c.o	2a0661f21cfd2e97
-19	34	1705533252496964379	afd_simulator	f165d5c951781963
-0	21	1705533308430430095	CMakeFiles/afd_simulator.dir/service.c.o	215e4f4c22ef2302
-21	36	1705533308446430514	afd_simulator	f165d5c951781963
-0	22	1705533560556451594	CMakeFiles/afd_simulator.dir/controller.c.o	2a0661f21cfd2e97
-0	24	1705533560560451783	CMakeFiles/afd_simulator.dir/service.c.o	215e4f4c22ef2302
-24	43	1705533560576452538	afd_simulator	f165d5c951781963
+22	37	1705534780636457131	afd_simulator	f165d5c951781963
+0	13	1705535006155349612	build.ninja	161df8b7c76ed2f3
+0	16	1705535006175350217	CMakeFiles/afd_simulator.dir/view.c.o	bf033d7a1e8b0cfa
+0	19	1705535006179350338	CMakeFiles/afd_simulator.dir/controller.c.o	2a0661f21cfd2e97
+19	34	1705535006195350823	afd_simulator	1a5994b700f7ba8
+1	21	1705535042580451554	CMakeFiles/afd_simulator.dir/controller.c.o	2a0661f21cfd2e97
+21	36	1705535042596452037	afd_simulator	1a5994b700f7ba8

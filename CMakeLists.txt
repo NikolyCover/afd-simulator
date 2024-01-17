@@ -8,4 +8,6 @@ add_executable(afd_simulator main.c
         model.h
         controller.c
         controller.h
-        service.h)
+        service.h
+        view.h
+        view.c)

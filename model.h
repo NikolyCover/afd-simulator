@@ -14,4 +14,15 @@ typedef struct {
     char * next_state;
 } Transition;
 
+typedef  struct  {
+    char **alphabet;
+    int alphabet_size;
+    char **states;
+    int states_size;
+    char **final_states;
+    int final_states_size;
+    Transition *transitions;
+    int transitions_size;
+} AFD;
+
 #endif //AFD_SIMULATOR_MODEL_H

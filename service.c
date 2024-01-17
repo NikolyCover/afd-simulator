@@ -26,38 +26,39 @@ void getData(char *line, char **array, int *size) {
     }
 }
 
-void read_afd(const char * filename, char ** alphabet, char ** states, char ** final_states, Transition ** transitions, int * alphabet_size, int * states_size, int * final_states_size, int * transitions_size) {
+void read_afd(const char * filename, AFD * afd) {
     FILE * file = fopen(filename, "r");
     if (file == NULL) {
         perror("Erro ao abrir o arquivo");
         exit(EXIT_FAILURE);
     }
+
     char line[MAX_LENGTH];
 
     while (fgets(line, MAX_LENGTH, file) != NULL) {
         if (strstr(line, "alfabeto") != NULL) {
-            getData(line, alphabet, alphabet_size);
+            getData(line, afd->alphabet, &(afd->alphabet_size));
         } else if (strstr(line, "estados") != NULL) {
-            getData(line, states, states_size);
+            getData(line, afd->states, &(afd->states_size));
         } else if (strstr(line, "finais") != NULL) {
-            getData(line, final_states, final_states_size);
+            getData(line, afd->final_states, &(afd->final_states_size));
         }
         else {
             // Linha de transição
-            if (*transitions_size == 0) {
-                *transitions = malloc(sizeof(Transition));
+            if (afd->transitions_size == 0) {
+                afd->transitions = malloc(sizeof(Transition));
             } else {
-                *transitions = realloc(*transitions, (*transitions_size + 1) * sizeof(Transition));
+                afd->transitions = realloc(afd->transitions, (afd->transitions_size + 1) * sizeof(Transition));
             }
 
             char current_state[MAX_STRING_LENGTH], next_state[MAX_STRING_LENGTH];
             char symbol;
             sscanf(line, "(%[^,],%c)= %s", current_state, &symbol, next_state);
 
-            (*transitions)[*transitions_size].current_state = strdup(current_state);
-            (*transitions)[*transitions_size].symbol = symbol;
-            (*transitions)[*transitions_size].next_state = strdup(next_state);
-            (*transitions_size)++;
+            afd->transitions[afd->transitions_size].current_state = strdup(current_state);
+            afd->transitions[afd->transitions_size].symbol = symbol;
+            afd->transitions[afd->transitions_size].next_state = strdup(next_state);
+            afd->transitions_size++;
         }
     }
 
